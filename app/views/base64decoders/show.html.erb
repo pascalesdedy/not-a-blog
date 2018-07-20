@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data Input: </strong>
+  <%= @base64decoder.datainput %>
+</p>
+
+<p>
+  <strong>Operation:</strong>
+  <%= @base64decoder.operation %>
+</p>
+
+
+<p>
+  <strong>Result:</strong>
+  <%= @base64decoder.data %>
+</p>
+
+<%= link_to 'Back', base64decoders_path %>

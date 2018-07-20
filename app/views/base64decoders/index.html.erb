@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Base64decoder</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>data</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @base64decoders.each do |base64| %>
+      <tr>
+        <td><%= base64.datainput %></td>
+        <td><%= base64.operation %></td>
+        <td><%= base64.data %></td>
+        <td><%= link_to 'Destroy', base64, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Decoder', new_base64decoder_path %>

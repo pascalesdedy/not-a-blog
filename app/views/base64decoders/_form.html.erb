@@ -1,0 +1,26 @@
+<%= form_with(model: base64decoder, local: true) do |form| %>
+  <% if base64decoder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(base64decoder.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% base64decoder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :datainput %>
+    <%= form.text_field :datainput %>
+    <%= form.select :operation, ['decode', 'encode']%>
+  </div>
+
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
