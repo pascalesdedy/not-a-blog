@@ -1,0 +1,14 @@
+<h1>users#index</h1>
+<% if user_signed_in? %>
+	You are logged in as : <%= current_user.email %>
+	<br>
+	<%= link_to('Logout', destroy_user_session_path, method: :delete) %> 
+<% else %>
+	Please Log in
+	<br>
+	<%= link_to 'Register', new_user_registration_path %>
+	<%= link_to 'Login', user_session_path %>
+<% end %>
+
+<br>
+<%= link_to 'Home', root_path %>
