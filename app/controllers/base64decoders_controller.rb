@@ -37,6 +37,10 @@ end
 
 
 def destroy
+	@base64decoder.destroy
+	respond_to do |format|
+		format.html { redirect_to base64decoders_url, notice: 'Data was successfully created.' }
+	end
 end
 
 private

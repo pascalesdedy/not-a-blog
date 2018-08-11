@@ -11,7 +11,7 @@ def self.from_omniauth(access_token)
 
   unless user
     password = Devise.friendly_token[0,20]
-    user = User.create(name: data["name"], email: data["email"],
+    user = User.create(name: data["name"], email: data["email"], image: data["image"],
       password: password, password_confirmation: password
     )
   end
