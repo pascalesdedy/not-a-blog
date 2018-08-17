@@ -1,4 +1,9 @@
-<h1>users#index</h1>
+<div class="container">
+<div class="section-header">          
+  <h2 class="section-title">User</h2>
+      <hr class="lines">
+</div>
+
 <% if user_signed_in? %>
 	You are logged in as : <%= current_user.email %>
 	<br>
@@ -16,3 +21,6 @@
 
 <br>
 <%= link_to 'Home', root_path %>
+
+
+</div>
