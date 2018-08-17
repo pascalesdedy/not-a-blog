@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: latarcloud
+  api_key: '855897597413578'
+  api_secret: EGKFK5RMqoIPSy0ZP_3ykag2_dI
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: latarcloud
+  api_key: '855897597413578'
+  api_secret: EGKFK5RMqoIPSy0ZP_3ykag2_dI
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: latarcloud
+  api_key: '855897597413578'
+  api_secret: EGKFK5RMqoIPSy0ZP_3ykag2_dI
+  enhance_image_tag: true
+  static_image_support: false

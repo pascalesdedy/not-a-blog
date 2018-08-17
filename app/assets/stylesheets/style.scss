@@ -163,6 +163,22 @@ a:not([href]):not([tabindex]):hover {
   font-size: 14px;
   font-weight: 400;
 }
+.section-header .section-blog-content {
+  margin-top: 15px;
+  margin-left: 45px;
+  margin-right: 45px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.section-header .blog-img {
+  margin-top: 15px ;
+  margin-bottom: 15px;
+}
+
+
 .section-header .lines {
   margin: auto;
   width: 70px;

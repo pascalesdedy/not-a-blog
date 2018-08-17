@@ -1,29 +1,48 @@
 <p id="notice"><%= notice %></p>
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Latest <span>Articles</span></h2>
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">These are my articles, mostly published in medium ( medium.com/@pascales ) </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
 
-<h1>Posts</h1>
+            <!-- Blog Item Starts -->
+            <% @posts.each do |post| %>
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-img">
+                <a href="single-post.html">
+                <%= image_tag("blog/img1.jpg", alt: "")%>
+                 
+                </a>                
+              </div>
+              <div class="blog-item-text"> 
+                <h3>
+                <td><%= post.title %></td>
+                </h3>
+                <div class="meta-tags">
+                  <span class="date"><i class="fa fa-calendar-full"></i><%= post.created_at %></span>
+                  <!-- <span class="comments"><a href="#"><i class="fa fa-bubble"></i> 24 comments </a></span> -->
+                </div>
+                <p>
+               <td><%= truncate(post.body, :length => 160) %></td>
+                </p>
+                <%= link_to 'Read More', post, class: "btn btn-common btn-rm" %>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog Section End -->
 
 <%= link_to 'New Post', new_post_path %>
+<%= link_to 'Home', root_path %>
