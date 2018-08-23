@@ -1,34 +1,32 @@
+<%= render 'header' %>
 <p id="notice"><%= notice %></p>
-
-  <div class="section-header">          
-    <h2 class="section-title" >Base64 Decoder</h2>
-    <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-    <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">This is a Simple base64 converter</p>
-  </div>
-
-<div class="container" align="center">    
-<table class="table-hover">
-  <thead class="thead-dark">
+<br>
+<div class="container">
+<%= link_to 'New Data', new_base64decoder_path, class: "btn btn-primary" %>
+<br>
+<br>    
+<table class="table table-hover">
+  <thead >
     <tr>
       <th scope="col">Data</th>
       <th scope="col">Operation</th>
       <th scope="col">Result</th>
+      <th scope="col">Delete</th>
     </tr>
   </thead>
 
   <tbody>
     <% @base64decoders.each do |base64| %>
       <tr>
-        <td><%= base64.datainput %></td>
+        <td scope='col'><%= base64.datainput %></td>
         <td><%= base64.operation %></td>
         <td><%= base64.data %></td>
-        <td><%= link_to 'Destroy', base64, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', base64, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'New Decoder |', new_base64decoder_path %>
-<%= link_to 'Home', root_path %>
+
 </div>
 <br>
 
