@@ -48,6 +48,8 @@ gem "jquery-slick-rails"
 gem 'wow-rails'
 gem 'carrierwave'
 gem 'nokogiri'
+gem 'forest_liana'
+gem 'redcarpet'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

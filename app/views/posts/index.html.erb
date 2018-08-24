@@ -4,6 +4,9 @@
       <p id="notice"><%= notice %></p>
       <!-- Container Starts -->
       <div class="container">
+        <%= link_to 'New Post?', new_post_path, class: "btn btn-primary" %>
+        <br>
+        <br>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
 
@@ -13,7 +16,7 @@
               <div class="blog-item-img">
                 <a>
                 <%= image_tag post.image_url%>
-                 
+      
                 </a>                
               </div>
               <div class="blog-item-text"> 
@@ -21,7 +24,7 @@
                 <td><%= post.title %></td>
                 </h3>
                 <div class="meta-tags">
-                  <span class="date"><i class="fa fa-calendar-full"></i><%= post.created_at %></span>
+                  <span class="date"><i class="fa fa-calendar-full"></i>Created at:<%= post.created_at.strftime("%B %d, %Y") %></span>
                   <!-- <span class="comments"><a href="#"><i class="fa fa-bubble"></i> 24 comments </a></span> -->
                 </div>
                 <p>
@@ -40,6 +43,3 @@
       </div>
     </section>
     <!-- blog Section End -->
-
-<%= link_to 'New Post', new_post_path %>
-<%= link_to 'Home', root_path %>
