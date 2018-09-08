@@ -1,11 +1,9 @@
 <!-- Header Section Start -->
-
     <header id="video-area" data-stellar-background-ratio="0.5">    
-      <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
       <div class="fixed-top">
           <div class="container">
             <div class="logo-menu">
-              <a href="" class="logo"><strong>Not-a-blog</strong></a>
+              <%= link_to 'Not-a-blog', root_path, class: "logo" %>
               <button class="menu-button" id="open-button"><i class="fa fa-bars" aria-hidden="true"></i></button>    
             </div>           
           </div>
@@ -15,13 +13,13 @@
         <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="contents text-center">
-              <h1 class="wow pos fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Hello there, I'm Pascales :)</h1>
-              <p class="lead pos  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">You can find some stuffs on my side menu, go on.... :) </p>
-             </div>
+              <h1 class="wow pos fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Citrakara</h1>
+              <p class="lead pos  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">These are paintings that are retreived from Rails API Server "http://api-citrakara.herokuapp.com/v1/paintings"</p>
+              </p>
+            </div>
               
           </div>
         </div> 
       </div>      
     </header>
     <!-- Header Section End --> 
-    <%= render 'welcome/body' %>

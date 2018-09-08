@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :base64decoders
 
+  get 'citrakara', to: 'citrakara#index'
+
   get 'weathers', to: 'weathers#index'
 
   get 'welcome/index'
