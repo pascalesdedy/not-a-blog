@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://pascales.herokuapp.com/</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/base64decoders</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/weathers</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/users</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/citrakara</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/new</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/3</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/4</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/2</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/base64decoders/new</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/users/sign_up</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/users/sign_in</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/3/edit</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/4/edit</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/posts/2/edit</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://pascales.herokuapp.com/users/password/new</loc>
+  <lastmod>2018-09-08T20:14:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
